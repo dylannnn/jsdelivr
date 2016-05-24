@@ -1,0 +1,103 @@
+/* GLOBAL SITE CSS - ADD CSS TO AFFECT THE WHOLE SITE */
+div.dmInner {
+    font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight:normal;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.imageWidget:not(.displayNone) img {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+#dm .dmBody .dmRespRow {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.padded-col {
+    padding: 70px !important;
+}
+.padded-col-small {
+    padding: 30px !important;
+}
+.nopad-col{
+    padding:0 !important;
+}
+.dark-row .dmNewParagraph{
+    color:#fff;
+}
+.white-row .dmNewParagraph{
+    color:#333;
+}
+.smallimg img {
+    max-width: 100px;
+}
+.bgimg-col {
+    min-height: 250px;
+}
+#dm .middle {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-center .dmNewParagraph{
+    text-align: center!important;
+}
+
+/* SMOOTH TRANSITIONS */
+#dm .dmBody a,.desktopTopNav > a,.desktopHeader #dm-logo-image {
+    webkit-transition: all 300ms cubic-bezier(.55,0,.1,1);
+    -moz-transition: all 300ms cubic-bezier(.55,0,.1,1);
+    -ms-transition: all 300ms cubic-bezier(.55,0,.1,1);
+    -o-transition: all 300ms cubic-bezier(.55,0,.1,1);
+    transition: all 300ms cubic-bezier(.55,0,.1,1);
+}
+
+#dm .dmBody a:hover,.desktopTopNav > a:hover,.desktopHeader #dm-logo-image:hover {
+    opacity: .7;
+    webkit-transition: all 300ms cubic-bezier(.55,0,.1,1);
+    -moz-transition: all 300ms cubic-bezier(.55,0,.1,1);
+    -ms-transition: all 300ms cubic-bezier(.55,0,.1,1);
+    -o-transition: all 300ms cubic-bezier(.55,0,.1,1);
+    transition: all 300ms cubic-bezier(.55,0,.1,1);
+}
+/* LINK COLOR */
+.dmInner a {
+  color:inherit;
+}
+
+
+/* ================  Mobile CSS  ================= */
+
+.dmMobileBody #dm .dmRespRow {
+    padding-top : 20px;
+    padding-bottom : 20px;
+}
+
+.dmMobileBody .imageWidget:not(.displayNone) img {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+.padded-col {
+    padding: 40px;
+}
+/*Reverse Row*/
+.dmMobileBody .reverseRow .dmRespCol, .reverseMidRow  .dmRespCol {
+    min-height: 150px !important;
+}
+.dmMobileBody .reverseRow .dmRespColsWrapper .dmRespCol:first-child {
+    order: 2;
+}
+.dmMobileBody .reverseRow .dmRespColsWrapper .dmRespCol:last-child {
+    order: 1;
+}
