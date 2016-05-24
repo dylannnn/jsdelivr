@@ -1,0 +1,8 @@
+{
+  "packageManager": "github",
+  "name": "sp-template",
+  "repo": "dylannnn/sp-template",
+  "files": {
+    "include": ["./css/sp-template.css", "./css/sp-template.min.css"]
+  }
+}
